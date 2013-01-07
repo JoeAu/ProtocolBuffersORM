@@ -1,25 +1,34 @@
 ProtocolBuffersORM
 ==================
+
 Author: glsensor@gmail.com (Joe Au)
+
 To Extended Protocol Buffers, increased the entity and Object-relational mapping
 
 ================================================================================
-This project need protobuf-2.5.0rc1
 
-How to Building?
+1) This project need protobuf-2.5.0rc1
 
-1) Unzip protobuf-2.5.0rc1.zip;
-2) Copy src\ to protobuf-2.5.0rc1\src directory;
-3) Building your protoc.exe;
+2) How to Building?
 
-How to Using?
-1) protoc -I=./ --java_out=./ <your.proto file>;
-2) .proto example;
+1. Unzip protobuf-2.5.0rc1.zip;
 
+2. Copy src\ to protobuf-2.5.0rc1\src directory;
+
+3. Building your protoc.exe;
+
+3) How to Using?
+
+1. protoc -I=./ --java_out=./ your.proto file;
+
+2. .proto example;
+
+<pre>
+<code>
 package com.google.protobuf.test;
 
 message PBModel {
-  required bytes b = 1;
+	required bytes b = 1;
 	required bool bo = 2;
 	required sint32 i = 3;
 	required sint64 l = 4;
@@ -56,9 +65,13 @@ message PBModel1 {
 message PBModel2 {
 	required sint32 pid = 1;
 }
+</code>
+</pre>
 
-3) Using in your Java project;
+3. Using in your Java project;
 
+<pre>
+<code>
 // SerializeEntity
 ModelA.PBModel.PBModelEntity model = new ModelA.PBModel.PBModelEntity();
 // ...Assignment and do something
@@ -69,8 +82,5 @@ byte[] buffer = pbModel.toByteArray();
 ModelA.PBModel pbModel2 = ModelA.PBModel.parseFrom(buffer);
 ModelA.PBModel.PBModelEntity model2 = ModelA.PBModel.DeserializeEntity(pbModel2);
 // ...do something
-
-
-================================================================================
-
-
+</code>
+</pre>
