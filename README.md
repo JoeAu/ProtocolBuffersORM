@@ -68,7 +68,7 @@ message PBModel2 {
 </code>
 </pre>
 
-3. Using in your Java project;
+4) Using in your Java project;
 
 <pre>
 <code>
