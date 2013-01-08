@@ -3,13 +3,13 @@ ProtocolBuffersORM
 
 Author: glsensor@gmail.com (Joe Au)
 
-To Extended Protocol Buffers, increased the entity and Object-relational mapping
+To extended Protocol Buffers, increased the entity and Object-relational mapping
 
 ================================================================================
 
 1) This project need protobuf-2.5.0rc1
 
-2) How to Building?
+2) How to building?
 
 1. Unzip protobuf-2.5.0rc1.zip;
 
@@ -17,7 +17,7 @@ To Extended Protocol Buffers, increased the entity and Object-relational mapping
 
 3. Building your protoc.exe;
 
-3) How to Using?
+3) How to using?
 
 1. protoc -I=./ --java_out=./ your.proto file;
 
@@ -68,7 +68,7 @@ message PBModel2 {
 </code>
 </pre>
 
-4) Using in your Java project;
+4) Using in your java project;
 
 <pre>
 <code>
