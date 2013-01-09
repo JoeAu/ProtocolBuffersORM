@@ -15,7 +15,7 @@ To extended Protocol Buffers, increased the entity and Object-relational mapping
 
 2. Copy src\ to protobuf-2.5.0rc1\src directory;
 
-3. Building your protoc.exe;
+3. Build your protoc.exe;
 
 3) How to using?
 
